@@ -1,13 +1,7 @@
 FROM node:12-stretch
 
-RUN wget --user-agent=Mozilla -O apache-pulsar-client.deb "https://archive.apache.org/dist/pulsar/pulsar-2.4.1/DEB/apache-pulsar-client.deb"
-RUN wget --user-agent=Mozilla -O apache-pulsar-client-dev.deb "https://archive.apache.org/dist/pulsar/pulsar-2.4.1/DEB/apache-pulsar-client-dev.deb"
-
-RUN apt install -y ./apache-pulsar-client.deb
-RUN apt install -y ./apache-pulsar-client-dev.deb
-
 WORKDIR /opt/bets_management_be
-COPY package*.json ./docker/.npmrc ./
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 4010

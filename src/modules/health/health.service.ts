@@ -10,7 +10,8 @@ const _formStatusString = (isALive: boolean): HealthStatuses => {
 };
 
 const getStatus = (): HealthStatusDTOInterface => {
-  const isAllAlive = true;
+  const isSomeDepAlive = true;
+  const isAllAlive = isSomeDepAlive;
   return {
     status: _formStatusString(isAllAlive),
     pid: process.pid,
@@ -21,7 +22,7 @@ const getStatus = (): HealthStatusDTOInterface => {
       memory: process.memoryUsage(),
     },
     dependencies: {
-      some_dep: _formStatusString(true),
+      someDep: _formStatusString(true),
     },
   };
 };

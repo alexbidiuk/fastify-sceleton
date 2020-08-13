@@ -11,7 +11,7 @@ interface HealthStatusDTOInterface {
     memory: MemoryUsage;
   };
   dependencies: {
-    pulsar?: HealthStatuses;
+    someDep?: HealthStatuses;
   };
 }
 

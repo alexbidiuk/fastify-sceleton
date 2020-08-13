@@ -7,7 +7,6 @@ import healthRoutesPlugin from './modules/health/health.routes.plugin';
 import swaggerConfig from './modules/swagger/swagger.config';
 import authHook from './hooks/auth.hook';
 
-
 let server: fastify.FastifyInstance;
 
 const startServer = ({ httpPort, hostname }) => {

@@ -34,7 +34,7 @@
     "fastify-cors": "^3.0.0",
     "fastify-plugin": "^1.6.1",
     "fastify-swagger": "^2.5.0",
-    "typescript": "^3.9.7",
+    "typescript": "^3.9.7"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",

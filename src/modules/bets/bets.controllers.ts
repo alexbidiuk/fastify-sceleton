@@ -5,6 +5,7 @@ const getBetsController = (
   req: FastifyRequest,
   res: FastifyReply<HttpResponse>,
 ) => {
+  console.log('hi');
 };
 
 export { getBetsController };

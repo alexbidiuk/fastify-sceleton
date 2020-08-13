@@ -1,9 +1,9 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 
 import hookTypes from '../constants/hookTypes';
+import { HttpResponse } from '../types/server';
 
 import { HookInterface } from './hooks.interface';
-import { HttpResponse } from '@bti/shared-components-be/lib/types/server';
 
 // hook to check token and write user to request obj
 const authHook: HookInterface = {
