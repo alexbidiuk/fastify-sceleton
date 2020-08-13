@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  bets_management_be:
+    init: true
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.dev
+    volumes:
+      - ../src/:/opt/bets_management_be/src
+    ports:
+      - 4010:4010
+    container_name: bets_management_be
+    environment:
+      - NODE_ENV=development
+    external_links:
+      - pulsar_service
+
+
+
+
+

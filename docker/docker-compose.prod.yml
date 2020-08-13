@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  bets_management_be:
+    init: true
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports:
+      - 4010:4010
+    container_name: bets_management_be
+    environment:
+      - CONFIG_DIR=docker
+
+
+
