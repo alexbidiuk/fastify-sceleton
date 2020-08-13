@@ -1,6 +1,6 @@
-# Bets management BE
+# BE sceleton
 
-Bets management api project
+Sceleton
 
 ## Installation
 
